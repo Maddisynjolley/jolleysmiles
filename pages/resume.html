@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maddisyn Jolley | Professional Portfolio</title>
+
+<style>
+:root{
+    --navy:#0f2747;
+    --light-navy:#266049;
+    --gold:#d9b44a;
+    --light:#f8fafc;
+    --gray:#6b7280;
+    --white:#ffffff;
+    --shadow:0 8px 24px rgba(0,0,0,.08);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height:1.6;
+    color:#222;
+    background:var(--light);
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+nav{
+    background:var(--white);
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.nav-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+
+.logo{
+    font-size:1.3rem;
+    font-weight:700;
+    color:var(--navy);
+}
+
+.nav-links{
+    display:flex;
+    gap:30px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--navy);
+    font-weight:600;
+}
+
+.nav-links a:hover{
+    color:var(--gold);
+}
+
+.hero{
+    background:linear-gradient(rgba(15,39,71,.92),rgba(15,39,71,.92));
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    font-size:1.3rem;
+    font-weight:400;
+    margin-bottom:25px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:35px;
+    font-size:1.05rem;
+}
+
+.btn{
+    display:inline-block;
+    background:var(--gold);
+    color:#111;
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:6px;
+    font-weight:700;
+    margin:8px;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    color:var(--navy);
+    margin-bottom:50px;
+    font-size:2rem;
+}
+
+.about{
+    background:white;
+}
+
+.about p{
+    max-width:800px;
+    margin:auto;
+    text-align:center;
+    font-size:1.1rem;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:var(--shadow);
+}
+
+.skill-card h3{
+    color:var(--navy);
+    margin-bottom:15px;
+}
+
+.skill-card ul{
+    list-style:none;
+}
+
+.skill-card li{
+    padding:6px 0;
+}
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.job{
+    background:white;
+    padding:25px;
+    border-left:5px solid var(--navy);
+    border-radius:8px;
+    box-shadow:var(--shadow);
+}
+
+.job h3{
+    color:var(--navy);
+}
+
+.job .date{
+    color:var(--gray);
+    margin-bottom:10px;
+}
+
+.job ul{
+    padding-left:20px;
+}
+
+.education{
+    background:white;
+}
+
+.education-card{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    box-shadow:var(--shadow);
+    padding:30px;
+    border-radius:10px;
+}
+
+.contact{
+    background:var(--navy);
+    color:white;
+    text-align:center;
+}
+
+.contact a{
+    color:white;
+    text-decoration:none;
+}
+
+.contact p{
+    margin:10px 0;
+}
+
+.footer{
+    background:#09182c;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.nav-container{
+    flex-direction:column;
+    gap:15px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:2.2rem;
+}
+
+.hero h2{
+    font-size:1.1rem;
+}
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="container nav-container">
+        <div class="logo">Maddisyn Jolley</div>
+
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="container">
+        <h1>Maddisyn Jolley</h1>
+
+        <h2>BYU Student | Future Business Professional | Fluent Spanish Speaker</h2>
+
+        <p>
+            Motivated and service-oriented professional with leadership experience,
+            business operations experience, and a passion for helping organizations
+            succeed through strong communication, teamwork, and problem-solving.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="#" class="btn">Download Resume</a>
+    </div>
+</header>
+
+<section id="about" class="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            I am a Brigham Young University student pursuing a business career
+            with interests in leadership, entrepreneurship, operations, and
+            customer experience. Through missionary service in Argentina,
+            managing operations at a dental office, and creating my own
+            volleyball club, I have developed strong communication,
+            organization, leadership, and problem-solving skills. I enjoy
+            working with people, learning new challenges, and creating
+            meaningful results for organizations and communities.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="container">
+
+        <h2 class="section-title">Professional Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>Leadership</h3>
+                <ul>
+                    <li>Team Leadership</li>
+                    <li>Event Planning</li>
+                    <li>Volunteer Coordination</li>
+                    <li>Project Management</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Business Operations</h3>
+                <ul>
+                    <li>Scheduling</li>
+                    <li>Customer Service</li>
+                    <li>Insurance Coordination</li>
+                    <li>Office Administration</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Communication</h3>
+                <ul>
+                    <li>Fluent Spanish</li>
+                    <li>Public Speaking</li>
+                    <li>Relationship Building</li>
+                    <li>Sales & Prospecting</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Technology</h3>
+                <ul>
+                    <li>Microsoft Office</li>
+                    <li>Word</li>
+                    <li>PowerPoint</li>
+                    <li>Business Technology Foundations</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="experience">
+    <div class="container">
+
+        <h2 class="section-title">Experience</h2>
+
+        <div class="timeline">
+
+            <div class="job">
+                <h3>Assistant Office Manager • Professional Dental</h3>
+                <div class="date">September 2025 – May 2026</div>
+                <ul>
+                    <li>Managed scheduling and office operations.</li>
+                    <li>Worked with patient insurance and financial accounts.</li>
+                    <li>Served as Spanish translator for patients and staff.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Missionary • Argentina Bahia Blanca Mission</h3>
+                <div class="date">January 2024 – July 2025</div>
+                <ul>
+                    <li>Led groups of missionaries and coordinated activities.</li>
+                    <li>Developed advanced Spanish communication skills.</li>
+                    <li>Planned and executed community service events.</li>
+                    <li>Taught English classes and worked with diverse communities.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Owner & Coach • Sand Volleyball Club</h3>
+                <div class="date">September 2020 – May 2021</div>
+                <ul>
+                    <li>Founded and managed a local volleyball club.</li>
+                    <li>Handled recruitment, scheduling, and billing.</li>
+                    <li>Developed training programs and organized tournaments.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Campaign Staff • Karin Robson Campaign</h3>
+                <div class="date">July 2022 – September 2022</div>
+                <ul>
+                    <li>Conducted voter outreach and survey collection.</li>
+                    <li>Built communication and relationship-building skills.</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="education" class="education">
+    <div class="container">
+
+        <h2 class="section-title">Education</h2>
+
+        <div class="education-card">
+
+            <h3>Brigham Young University</h3>
+            <p><strong>Pre-Business Student</strong></p>
+            <p>Provo, Utah</p>
+            <p>GPA: 3.32</p>
+
+            <br>
+
+            <h3>Highlights</h3>
+
+            <ul>
+                <li>Fluent in Spanish</li>
+                <li>Missionary Leadership Experience</li>
+                <li>Student Athlete (Volleyball & Tennis)</li>
+                <li>National Honor Society</li>
+                <li>Academic Scholar Award</li>
+                <li>Student Government Leadership</li>
+            </ul>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <h2 class="section-title" style="color:white;">Let's Connect</h2>
+
+        <p><strong>Email:</strong> maddisynjolley@gmail.com</p>
+
+        <p><strong>Phone:</strong> (480) 931-2383</p>
+
+        <p><strong>Location:</strong> Provo, Utah</p>
+
+        <p>
+            I'm actively seeking opportunities where I can contribute,
+            learn, and grow while making a positive impact on an organization.
+        </p>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    © 2026 Maddisyn Jolley
+</footer>
+
+</body>
+</html>
